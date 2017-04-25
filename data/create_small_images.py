@@ -8,7 +8,7 @@ lfw_path = place + "/lfw-deepfunneled/"
 out_path = place + "/small_pics/"
 
 k = 0
-n = 1000
+n = 100000
 for path, dirs, files in os.walk(lfw_path):
     if len(files) > 0 and k < n:
         for i in files:
