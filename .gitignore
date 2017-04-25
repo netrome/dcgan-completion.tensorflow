@@ -3,5 +3,6 @@ samples
 checkpoint
 *.jpg
 *.tgz
+*.npy
 __pycache__
 out
