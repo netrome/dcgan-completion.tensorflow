@@ -72,7 +72,7 @@ class DCGAN(object):
         self.sample_images= tf.placeholder(
             tf.float32, [None] + self.image_shape, name='sample_images')
         self.z = tf.placeholder(tf.float32, [None, self.z_dim], name='z')
-        self.z_sum = tf.histogram_summary("z", self.z)
+        self.z_sum = tf.summary.histogram("z", self.z)
 
         self.G = self.generator(self.z)
         self.D, self.D_logits = self.discriminator(self.images)
