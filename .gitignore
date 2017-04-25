@@ -1,6 +1,7 @@
 logs
 samples
 checkpoint
-data
+*.jpg
+*.tgz
 __pycache__
 out
